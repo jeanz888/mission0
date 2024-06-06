@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Association NZ </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(2.5);
+            }
+        }
+
+        .header .logo {
+            font-size: 1.5em;
+            animation: logoAnimation 2s infinite;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        .main-banner {
+            background-color: #5c5c5c;
+            text-align: center;
+            padding: 2em 1em;
+        }
+
+        .main-banner h1 {
+            display: flex;
+            text-align: center;
+            margin: 0.5em 0;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .main-banner video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+            animation: zoomOut 5s ease-in-out forwards;
+        }
+        @keyframes zoomOut {
+            from {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        .main-banner .search-bar {
+            margin: 1em 0;
+            display: flex;
+            justify-content: center;
+        }
+        .main-banner .search-bar input {
+            width: 50%;
+            padding: 0.5em;
+            font-size: 1em;
+            border: 1px solid #ccc;
+        }
+        .main-banner .search-bar button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1em;
+        }
+
+        .content .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+            margin: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .content .card video {
+            width: 80%;
+            height: 80%;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .content .card p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 1em;
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            z-index: 1;
+            width: 100%;
+            box-sizing: border-box;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            /* Change this line to allow 3 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        @media (max-width: 768px) {
+            .header, .main-banner, .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content .card {
+                width: 80%;
+            }
+            .main-banner .search-bar input {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <video autoplay loop muted width="80" height="40">
+                <source
+                    src="C:\Users\jeann\OneDrive\Documents\!2024\Mission_Ready\Mission_1\Animated Logo 500x500 px.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <section class="main-banner">
+        <div style="position: absolute; left: 50%; transform: translateX(-50%); z-index: 1;">
+            <h1>Gain access to valuable insights and guidance from industry experts to enhance your marketing strategies
+                and tactics.</h1>
+        </div>
+
+        <div style="max-width: 1700px; margin: 0 auto; text-align: center;">
+            <video style="width: 100%; height: 700px;" autoplay loop muted>
+                <source
+                    src="C:\Users\jeann\OneDrive\Documents\!2024\Mission_Ready\Mission_1\5544054-uhd_2160_3840_30fps.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <section class="content">
+            <div class="card">
+                <video autoplay muted width="150" height="150">
+                    <source
+                        src="C:\Users\jeann\OneDrive\Documents\!2024\Mission_Ready\Mission_1\6558419-uhd_3840_2160_25fps.mp4"
+                        type="video/mp4">
+                </video>
+                <h3> Social Media Management and Advertising</h3>
+                <ul>
+                    <li>Offer social media management and advertising services</li>
+                    <li>Provide content creation and copywriting for online platforms</li>
+                </ul>
+                
+            </div>
+            <div class="card">
+                <video autoplay muted width="150" height="150">
+                    <source
+                        src="C:\Users\jeann\OneDrive\Documents\!2024\Mission_Ready\Mission_1\7279472-uhd_4096_2160_24fps.mp4"
+                        type="video/mp4">
+                </video>
+                <h3>Measurable Results and Return on Investment</h3>
+                <ul>
+                    <li>Deliver measurable results and return on investment for clients</li>
+                </ul>
+                
+            </div>
+            <div class="card">
+                <video autoplay muted width="150" height="150">
+                    <source
+                        src="C:\Users\jeann\OneDrive\Documents\!2024\Mission_Ready\Mission_1\7652266-uhd_2160_3840_30fps.mp4"
+                        type="video/mp4">
+                </video>
+                <h3>Digital Marketing Strategies</h3>
+                <ul>
+                    <li>Specialize in digital marketing strategies</li>
+                    <li>Develop tailored marketing plans for businesses of all sizes</li>
+                    <li>Utilize data-driven insights to optimize marketing campaigns</li>
+                </ul>
+
+            </div>
+    
+
+        </section>
+
+
+        <footer class="footer">
+            <a href="#" style="color: black;"> © 2024 Marketing Association | All right reserved</a>
+        </footer>
+
+    </body>
+</html>
